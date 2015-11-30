@@ -1,17 +1,38 @@
-sing System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="UserLogin.Login" %>
 
-namespace UserLogin
-{
-    public partial class Login : System.Web.UI.Page
-    {
-        protected void Page_Load(object sender, EventArgs e)
-        {
+<!DOCTYPE html>
 
-        }
-    }
-}
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+
+<body>
+    <form id="form1" runat="server">
+    <div>
+     <table>
+            <tr>
+                <td>Email Adresi</td>
+                <td> : </td>
+                <td>
+                    <asp:TextBox ID="txtEmailAdres" runat="server" />
+                </td>
+            </tr>
+            <tr>
+                <td>Şifre</td>
+                <td> : </td>
+                <td>
+                    <asp:TextBox ID="txtSifre" runat="server" />
+                </td>           
+ </tr>
+         <tr>
+             <td colspan="3">
+                 <asp:Button ID=btnGirisYap Text="Giriş Yap" runat="server" /></td>
+         </tr>
+         </table>
+    </div>
+    </form>
+</body>
+</html>
+
+
